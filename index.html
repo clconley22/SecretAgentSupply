@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Secret Agent Supply Inc.</title>
-    <link rel="stylesheet" href=".Resources/css/reset.css">
-    <link rel="stylesheet" href=".Resources/css/style.css">
+    <link rel="stylesheet" href="./Resources/css/reset.css">
+    <link rel="stylesheet" href="./Resources/css/style.css">
   </head>
   <body>
     <!--Header-->
@@ -17,13 +17,15 @@
     <!--top-banner-->
     <div class="top-banner">
       <div class="container">
-        <h4>NEW ARRIVALS</h4>
-        <h1>SPORT BIKES AND MOTORCYCLES</h1>
+        <div class="text">
+          <h4>NEW ARRIVALS</h4>
+          <h1>SPORT BIKES AND MOTORCYCLES</h1>
+        </div>
       </div>
     </div>
     <!--Nav section-->
     <nav>
-      <ul=menu-items>
+      <ul class= "container">
         <li>Eyewear</li>
         <li>Apparel</li>
         <li>Gadget</li>
@@ -38,28 +40,21 @@
         <div class="product">
           <div class="image">
             <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/pen.png" alt="pen">
-            <div class="caption">
-              <span>Exploding Pen</span>
-            </div>
           </div>
+          <span class="caption">Exploding Pen</span>
         </div>
         <div class="product">
-          <div class="imgage">
+          <div class="image">
             <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/watch.png" alt="watch">
-            <div class="caption">
-              <span>Cellular Watch</span>
-            </div>
           </div>
+          <span class="caption">Cellular Watch</span>
         </div>
         <div class="product">
           <div class="image">
             <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/glasses.png" alt="glasses">
           </div>
-          <div class="caption">
-            <span>Thermal Glasses</span>
-          </div>
+          <span class="caption">Thermal Glasses</span>
         </div>
-      </div>
     </div>
     <!--location and hours-->
     <div class="location-hours">
@@ -83,7 +78,9 @@
       </div>
     </div>
     <footer>
-      <span>Copyright Secret Agent Supply Inc.</span>
+      <div class="container">
+        <span>Copyright Secret Agent Supply Inc.</span>
+      </div>  
     </footer>
   </body>
 </html>
