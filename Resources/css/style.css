@@ -78,6 +78,10 @@ nav ul {
   align-items: center;
   padding: .75rem 0;
 }
+
+.mobile-nav {
+  display: none;
+}
  /*product selection */
 .image {
   display: flex;
@@ -97,7 +101,9 @@ nav ul {
   justify-content: space-between;
 }
 
-.product {
+.product-pen,
+.product-watch,
+.product-glasses {
   display: flex;
   justify-content: space-around;
   margin-top: 3rem;
@@ -138,6 +144,74 @@ footer {
   padding: 5rem 0;
   background-color: black;
   color: white;
-  text-align: left;
-  align-content: center;
+}
+
+/*tablet sized styles*/
+
+@media only screen and (max-width: 1024px) {
+  .product-pen,
+  .product-watch {
+    width: 47%;
+  }
+  .product-glasses{
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    text-align: left;
+  }
+}
+
+/*mobile sized*/
+
+@media only screen and (max-width: 470px) {
+  .products .container {
+    flex-wrap: wrap;
+  }
+
+  .product-pen {
+    width: 90%;
+    margin: auto;
+  }
+
+  .product-watch {
+    display: none;
+  }
+
+  .locations,
+  .hours {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: .5rem auto;
+  }
+
+  .top-banner {
+     height: 15rem;
+   }
+
+  .top-banner .text {
+    top: 10rem;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: 3rem;
+  }
+
+  .top-banner .text h4 {
+    font-size: .77rem;
+  }
+
+  .top-banner .text h1 {
+    font-size: 1rem;
+  }
+
+  footer {
+    display: flex;
+    text-align: center;
+  }
 }
